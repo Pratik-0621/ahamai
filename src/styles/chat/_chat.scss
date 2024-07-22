@@ -1,0 +1,74 @@
+.chat {
+  &-data {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    &-item {
+      margin-bottom: 20px;
+      &-question {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 20px;
+        &-text {
+          display: flex;
+          align-items: center;
+          min-height: 50px;
+          border-radius: 7px;
+          padding: 0 10px;
+          max-width: 60%;
+          box-shadow: 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+            22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+            100px 100px 80px rgba(0, 0, 0, 0.07);
+          background-color: rgb(213, 213, 213);
+        }
+        img {
+          width: 40px;
+          border-radius: 50%;
+        }
+      }
+      &-answer {
+        display: flex;
+        gap: 20px;
+        &-text {
+          border-radius: 7px;
+          padding: 20px 10px;
+          min-height: 50px;
+          max-width: 70%;
+          box-shadow: 12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+            100px 100px 80px rgba(0, 0, 0, 0.07);
+          background-color: rgb(242, 242, 242);
+          &-text {
+            margin-bottom: 20px;
+            font-weight: 500;
+          }
+          &-graph {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+  &-input {
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(249, 243, 231);
+
+    margin-right: -40px;
+    margin-left: -40px;
+    padding: 10px 40px 25px;
+    width: 74%;
+    box-shadow: 2.8px 0.2px 2.2px rgba(0, 0, 0, 0.02),
+      6.7px 0.5px 5.3px rgba(0, 0, 0, 0.028),
+      12.5px 0.9px 10px rgba(0, 0, 0, 0.035),
+      22.3px 1.6px 17.9px rgba(0, 0, 0, 0.042),
+      41.8px 2.9px 33.4px rgba(0, 0, 0, 0.05),
+      100px 7px 80px rgba(0, 0, 0, 0.07);
+    input {
+      border-radius: 11px !important;
+      background-color: white;
+      box-shadow: 100px 100px 80px rgba(0, 0, 0, 0.07);
+      border-width: 2px !important;
+    }
+  }
+}
