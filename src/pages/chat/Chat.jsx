@@ -24,7 +24,7 @@ const Chat = () => {
     e.preventDefault();
     axios
       .post(baseURL + chatGPT, {
-        "lang-text": input,
+        text: input,
       })
       .then((response) => {
         setQna([...qna, response.data]);

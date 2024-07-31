@@ -72,7 +72,7 @@ const ChatUI = (props) => {
                     <AccountCircleIcon sx={{ fontSize: 40 }} />
                     <div className="chat-data-item-answer-text">
                       <div className="chat-data-item-answer-text-text">
-                        {item.data}
+                        {item.text}
                       </div>
                       <div className="chat-data-item-answer-text-table">
                         <TableContainer component={Paper}>
@@ -82,7 +82,7 @@ const ChatUI = (props) => {
                           >
                             <TableHead>
                               <TableRow>
-                                {item.column_names.map((it) => {
+                                {item.parameters.map((it) => {
                                   return (
                                     <TableCell align="center">{it}</TableCell>
                                   );
@@ -90,7 +90,7 @@ const ChatUI = (props) => {
                               </TableRow>
                             </TableHead>
 
-                            {item.table.map((it) => {
+                            {item.data.map((it) => {
                               return (
                                 <TableBody>
                                   {it.map((res, cnt) => {

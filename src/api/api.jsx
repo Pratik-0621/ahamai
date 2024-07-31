@@ -4,5 +4,5 @@ export const addDbConnection = "/addDb";
 export const dbConnectionList = "/getDbConns";
 export const addTraining = "/addTrainingData";
 export const trainingData = "/getTrainingData";
-export const chatGPT = "/get_response";
+export const chatGPT = "/chat-with-aham";
 export const DBconnectioURL = "http://localhost:8000";
